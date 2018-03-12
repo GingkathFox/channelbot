@@ -9,6 +9,7 @@ client.on("ready", () => {
 client.channels.get("422238891115020289");
 client.on('message', message => {
     if (channel.members.size >= 2) {
+      
 
 });
 
