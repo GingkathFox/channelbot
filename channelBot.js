@@ -7,7 +7,7 @@ client.on("ready", () => {
   console.log("I'M");
   client.channels.get("422238891115020289");
 });
-//client.channels.get("422238891115020289");//change the numbers with the
+//change the numbers with the
 //channel you want by using \#channel-name in Discord
 client.on('message', message => {
   let channel = message.channel;
