@@ -5,14 +5,17 @@ const client = new Discord.Client();
 
 client.on("ready", () => {
   console.log("I'M");
+  client.channels.get("422238891115020289");
 });
-client.channels.get("422238891115020289");//change the numbers with the
+//client.channels.get("422238891115020289");//change the numbers with the
 //channel you want by using \#channel-name in Discord
 client.on('message', message => {
-    if (channel.members.size >= 2) {
+  let channel = message.channel;
+  let roles = message.guild.roles;
+  if (channel.members.size >= 2) {
       function closeDownChannel(message) {
-    let channel = message.channel;
-    let roles = message.guild.roles; // collection
+   // let channel = message.channel;
+   // let roles = message.guild.roles; // collection
 
     // find specific role - enter name of a role you create here
     let testRole = roles.find('name', 'Gingkatest');
