@@ -38,6 +38,9 @@ client.on('message', message => {
         // optional 'reason' for permission overwrite
         'hiding!'
     )
+   if (message.content === '!ping') {
+        message.channel.send('Pong.');
+    }
 });
 
 client.login(token);
